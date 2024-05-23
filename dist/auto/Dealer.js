@@ -47,11 +47,11 @@ class Dealer {
         return `New ${car.model} price is ${this.formatedPrice(newPrice)}.`;
     }
     sellCar(id) {
-        const carId = id - 1;
-        const car = this.allCars[carId];
         if (id < 1 || id > this.allCars.length) {
             return 'SORRY! There is no such car for sale :(';
         }
+        const carId = id - 1;
+        const car = this.allCars[carId];
         this.soldCars.push(car);
         this.allCars.splice(carId, 1);
         return `Wow! ${car.model} sold for ${this.formatedPrice(car.price)}`;

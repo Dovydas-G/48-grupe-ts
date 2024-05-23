@@ -28,4 +28,3 @@ console.log(bandis.sellCar(1));
 // console.log(bandis.sellCar(2));
 // // Wow! Toyota sold for 17.500 EUR!
 console.log(bandis.carList());
-console.log('labas');
